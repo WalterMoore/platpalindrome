@@ -1,12 +1,14 @@
 import {App, events, register, routing} from 'platypus';
 import HomeViewControl from '../viewcontrols/home/home.vc';
+import SecondViewControl from '../viewcontrols/second/second.vc';
 
 export default class MyApp extends App {
     constructor(router: routing.Router) {
         super();
 
         router.configure([
-            { pattern: '', view: HomeViewControl }
+            { pattern: '', view: HomeViewControl },
+            { pattern: '', view: SecondViewControl}
         ]);
     }
 
