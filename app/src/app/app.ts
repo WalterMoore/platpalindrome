@@ -8,7 +8,7 @@ export default class MyApp extends App {
 
         router.configure([
             { pattern: '', view: HomeViewControl },
-            { pattern: '', view: SecondViewControl}
+            { pattern: '/second', view: SecondViewControl}
         ]);
     }
 

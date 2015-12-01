@@ -4,7 +4,10 @@ import BaseViewControl from '../base/base.vc';
 export default class HomeViewControl extends BaseViewControl {
     templateString: string = require('./home.vc.html');
 
-    context: any = {};
+    context: any = {
+        forwardWord: "",
+    };
 }
 
 register.viewControl('home-vc', HomeViewControl);
+
